@@ -31,6 +31,9 @@ This application was designed with:
 - create template for author stats
 - complete methods for generating and rendering author stats
 
+01/04/2018:
+- built method to calculate and render number of articles written per author (*STRETCH GOAL*)
+
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 - JB Tellez: Assistance with properly calling initialize methods after exporting 'Article' and 'articleView' objects
