@@ -80,6 +80,8 @@ var app = app || {};
 
   Article.prototype.insertRecord = function(callback) {
     // REVIEWED: Why can't we use an arrow function here for .insertRecord()?
+    // The $.post() method has 'this' in it's scope, so arrow functions cannot be used.
+
     $.post('/articles', {author: this.author, authorUrl: this.authorUrl, body: this.body, category: this.category, publishedOn: this.publishedOn, title: this.title})
       .then(console.log)
       .then(callback);
